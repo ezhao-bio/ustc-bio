@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  生院学业手册
+%%  初版作者：赵恩冲
+%% 请先阅读并编译README.tex，快速上手本文档。
+
+
+%%  小寄语：可以看到这里的后来人你们好呀！
+%%  对于学习，突击期末更有性价比，dyy的提纲是最好的武器；对于选课，有时选择大于努力，评课社区是第一手资料；对于出国，有前辈指引照亮前路，此时飞跃手册就是你的利刃……
+%%  我们受益于上述的种种，前人种树后人乘凉。
+%%  但是对于生命学院的学业，貌似没有那么多资料。这使得我萌生了写这样一本书的想法
+%%  恰逢申请暑研以及毕设。那好呀，就由我写下序曲。
+%%  可能它会像飞跃手册，代代相传，代代维护；可能它会骈死于茫茫时间中……
+%%  衷心祝愿所有USTC的学弟学妹们顺利完成学业！
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+\documentclass[lang=cn,10pt]{elegant}
+
+%lang=cn使用中文进行编译。英文是en，未更新英文版
+\title{生院学习指南}
+\subtitle{星辰虽小，难掩其明}
+
+\author{Enchong Zhao}
+\institute{USTC生命科学学院}
+\date{April 3, 2025}
+\version{0.1.7}
+\bioinfo{邮箱}{eczhao@mail.ustc.edu.cn}
+
+\extrainfo{读书不是为了雄辩和驳斥，也不是为了轻信和盲从，而是为了思考和权衡。}
+\setcounter{tocdepth}{3}
+\cover{cover.jpg}
+%\logo{logo.png}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+% 修改标题页的橙色带
+% \definecolor{customcolor}{RGB}{32,178,170}
+% \colorlet{coverlinecolor}{customcolor}
+
+
+\begin{document}
+
+\maketitle
+\frontmatter
+\tableofcontents
+\mainmatter
+%%overleaf可以编译出目录，但是本地版本无法生成目录，有待大神解决。
+
+\newpage
+
+\begin{center}
+
+    \begin{tcolorbox}[colback=gray!5!white, colframe=red!80!black,
+        width=0.8\textwidth, title=说明, sharp corners, box align=center]
+        本指南仅作为个人经验分享，未经过任何peer review内容仅供参考。请读者务必自行甄别信息的准确性与适用性。
+
+        本书基于 \texttt{ElegantBook} 模板制作，并在此基础上进行了适当修改。模板及内容仅供学习与交流使用，\textbf{严禁用于任何商业用途}。
+
+        很多时候读懂游戏规则比玩转游戏本身更重要，但本书潦草而成，废话连篇，权作杂记寥解烦忧。
+    \end{tcolorbox}
+\end{center}
+
+\newpage
+
+\notetitle{前言}
+\markboth{前言}{前言} % 中英双语场景可写为 \markboth{Introduction}{前言}
+\thispagestyle{fancy} % 确保首页也应用页眉样式
+
+
+\begin{mdframed}[
+    linewidth=0.7pt,
+    linecolor=gold!60,
+    backgroundcolor=gold!5
+]
+\noindent
+
+\vspace*{7cm}
+\begin{center}
+
+\LARGE 这是一段小有遗憾的幸福时光
+
+\end{center}
+
+\vspace*{11.1cm}
+
+\begin{flushright}
+    \textcolor{gray!50}{\scriptsize 赵恩冲} \\
+    \textcolor{gray!50}{\scriptsize 2025年4月3日}
+\end{flushright}
+    
+\end{mdframed}
+
+\input{chapters/第0章}
+\input{chapters/分班与专业.tex}
+\input{chapters/竞赛.tex}
+\input{chapters/交流实习}
+\input{chapters/保研.tex}
+\input{chapters/海外申请.tex}
+\input{chapters/后记.tex}
+
+
+\end{document}
