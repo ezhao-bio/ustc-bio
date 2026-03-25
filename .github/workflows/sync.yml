@@ -18,7 +18,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git remote add ustc https://${{ secrets.USTC_TOKEN }}@latex.ustc.edu.cn/git/6979344991148512e332453f.git || true
+          git remote add ustc https://git:${{ secrets.USTC_TOKEN }}@latex.ustc.edu.cn/git/6979344991148512e332453f.git || true
           git fetch ustc
           USTC_BRANCH=$(git remote show ustc | grep 'HEAD branch' | awk '{print $NF}')
           git merge ustc/$USTC_BRANCH --allow-unrelated-histories -m "Sync from USTC LaTeX" || true
