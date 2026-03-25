@@ -1,0 +1,39 @@
+% 该文档旨在帮助项目其他负责人快速上手文档结构
+% 以最精简、最小的文档结构，运行该书籍
+%可以快速通过整个极简的结构，快速掌握编辑文件的所有命令
+\documentclass[lang=cn,11pt]{elegant}
+
+\title{LaTeX 项目编辑指南（README）}
+\subtitle{Quick Start for Editors}
+\author{赵恩冲}
+\date{\today}
+
+%插入chapter
+\begin{document}
+\maketitle
+
+%具体内容请参照chapters/文本结构说明部分.tex
+%该章节用于模拟学习指南的编译结构
+
+%如需在正文中插入文本内容，请在chapters章节添加新的.tex文件，使用类似下方命令的方式添加：
+
+\input{chapters/chap-README.tex}
+
+
+%后记以及版本信息
+\section*{版本信息}
+这部分是版本信息，方便快速了解做过哪些改动。
+
+\datechange{2026/01/30}{版本 0.2.1 / Powered by Enchong Zhao}
+\begin{change}
+  \item 重组所有的内容
+  \item 添加双入口导航
+\end{change}
+
+\datechange{2025/08/25}{版本 0.1.7 / Powered by Enchong Zhao}
+\begin{change}
+  \item 选取ElegantBook作为模板，感谢ElegantBook project的模板
+  \item 完成所有的主要内容。
+\end{change}
+
+\end{document}
